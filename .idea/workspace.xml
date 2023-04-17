@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f11d55-f543-4600-a6c0-3d9f4cf6b591" name="Changes" comment="Выполнил примеры и первое задание">
+    <list default="true" id="39f11d55-f543-4600-a6c0-3d9f4cf6b591" name="Changes" comment="Выполнил третье задание">
+      <change afterPath="$PROJECT_DIR$/src/Tasks/Task_4_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tasks/Task_4_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tasks/Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/Task_2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Task_4_1">
     <configuration name="Task_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tasks.Task_2" />
       <module name="Laba_11" />
@@ -60,8 +61,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tasks.Task_3" />
+      <module name="Laba_11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tasks.Task_4" />
+      <module name="Laba_11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task_4_1" />
+        <item itemvalue="Application.Task_3" />
         <item itemvalue="Application.Task_2" />
       </list>
     </recent_temporary>
@@ -75,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681626074952</updated>
       <workItem from="1681626077310" duration="3524000" />
-      <workItem from="1681739259492" duration="6773000" />
+      <workItem from="1681739259492" duration="8630000" />
     </task>
     <task id="LOCAL-00001" summary="Выполнил примеры и первое задание">
       <created>1681629532751</created>
@@ -84,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681629532751</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Выполнил второе задание">
+      <created>1681746365393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681746365393</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Выполнил третье задание">
+      <created>1681751961265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681751961265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,14 +135,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Выполнил примеры и первое задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнил примеры и первое задание" />
+    <MESSAGE value="Выполнил второе задание" />
+    <MESSAGE value="Выполнил третье задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнил третье задание" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tasks/Task_2.java</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
