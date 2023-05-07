@@ -121,8 +121,12 @@ public class Task_7 {
         }
         return null;
     }
-    public static String toStringRec(Node head){
+    public static String toStringRec(Node head){//Вывод списка с рекурсией
         if(head.next != null) {
+            System.out.print(head.value);
+            head = head.next;
+            toStringRec(head);
+        }else{
             System.out.print(head.value);
         }
         return null;//Не нуль! доделать!
