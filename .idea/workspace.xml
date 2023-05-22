@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f11d55-f543-4600-a6c0-3d9f4cf6b591" name="Changes" comment="Выполнил шестое задание">
-      <change afterPath="$PROJECT_DIR$/src/Tasks/Task_7.java" afterDir="false" />
+    <list default="true" id="39f11d55-f543-4600-a6c0-3d9f4cf6b591" name="Changes" comment="Выполнил седьмое задание">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks/Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/Task_7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/alexg/OneDrive/Учеба/Программирование/Курсовой/SpringProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Task_7">
     <configuration name="Task_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tasks.Task_3" />
@@ -137,6 +138,9 @@
       <workItem from="1682926718774" duration="613000" />
       <workItem from="1683037069411" duration="13716000" />
       <workItem from="1683443569468" duration="5087000" />
+      <workItem from="1683451982282" duration="1249000" />
+      <workItem from="1684056914895" duration="130000" />
+      <workItem from="1684265902400" duration="7051000" />
     </task>
     <task id="LOCAL-00001" summary="Выполнил примеры и первое задание">
       <created>1681629532751</created>
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682356613487</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Выполнил седьмое задание">
+      <created>1683452578476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683452578476</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +215,8 @@
     <MESSAGE value="Выполнил четвертое задание" />
     <MESSAGE value="Выполнил пятое задание" />
     <MESSAGE value="Выполнил шестое задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнил шестое задание" />
+    <MESSAGE value="Выполнил седьмое задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнил седьмое задание" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -213,11 +225,6 @@
           <url>file://$PROJECT_DIR$/src/Tasks/Task_2.java</url>
           <line>43</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Tasks/Task_5.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tasks/Task_6_1.java</url>

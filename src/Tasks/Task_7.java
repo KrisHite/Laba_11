@@ -1,5 +1,7 @@
 package Tasks;
 
+import java.util.Arrays;
+
 public class Task_7 {
     /**
      *Создаю методы только для int
@@ -11,8 +13,31 @@ public class Task_7 {
         Node list1 = createHead(5);//Создание головы(Ссылка на голову)
         //Пример наращивания списка с хвоста
         Node list2 = createTail(7);//Создание хвоста
+        //Пример вывода списка
+//        System.out.println(toString(list1));
+//        System.out.println(toString(list2));
+//        //Проверяю добавление вначало листа
+//        System.out.println(toString(AddFirst(50, list1)));
+//        System.out.println(toString(AddLast(666, list2)));
+        //Проверяю вставку эллемента по номеру
+//        Insert(351, list2, 3);
+//        System.out.println(toString(list2));
+        //Проверяю удаление сначала строки
+//        list2 = RemoveFirst(list2);
+//        System.out.println(toString(list2));
+        //Проверяю удаление с хвоста
+//        list2 = RemoveLast(list2);
+//        System.out.println(toString(list2));
+        //Проверяю удаление по номеру
+//        list2 = Remove(list2, 3);
+//        System.out.println(toString(list2));
+        //Проверяю добавление с головы с рекурсией и вывод с рекурсией
+//        list2 = CreateHeadRec(list2, 55, 66, 73);
+//        System.out.println(toStringRec(list2));
+        //Проверяю добавление с хвосты с рекурсией
+        list2 = CreateTailRec(list2, 666);
+        System.out.println(toStringRec(list2));
 
-        //Описать примеры работы методов
 
     }
     public static Node createHead(int quantity){//Наращивание с головы,Возвращаем адресс головы
@@ -46,7 +71,7 @@ public class Task_7 {
         }
         return result;
     }
-    public static Node AddFirst(int data,Node head){//Добавление вначало списка(Возвращаю ссылку на голову)
+    public static Node AddFirst(int data, Node head){//Добавление вначало списка(Возвращаю ссылку на голову)
         head = new Node(data, head);
         return head;
     }
@@ -76,11 +101,11 @@ public class Task_7 {
         return head;
     }
 
-    public static Node RemoveFirst(Node head){//(ПРОВЕРИТЬ!)Удаление эллемента сначала списка, Возвращаю ссылку на голову
+    public static Node RemoveFirst(Node head){//Удаление эллемента сначала списка, Возвращаю ссылку на голову
         head = head.next;//Следующий эллемент становится головой
         return head;
     }
-    public static Node RemoveLast(Node head){//(ПРОВЕРИТЬ!)Удаление эллемента вконце списка, Возвращаю ссылку на голову
+    public static Node RemoveLast(Node head){//Удаление эллемента вконце списка, Возвращаю ссылку на голову
         Node ref = head;
         Node buffer = null;//Сохраняю предыдущий
         while(ref.next != null){
@@ -90,46 +115,50 @@ public class Task_7 {
         buffer.next = null;
         return head;
     }
-    public static Node Remove(Node head, int num){//(ПРОВЕРИТЬ!)Удаляю эллемент списка с указанным номером
+    public static Node Remove(Node head, int num){//Удаляю эллемент списка с указанным номером
         Node ref = head;
         if(num == 0){
             Node result = RemoveFirst(head);
             return result;
         }
-        for(int i = 0; i <= num; i++){
+        for(int i = 0; i < (num - 1); i++){
             ref = ref.next;
         }
         Node buffer = ref;
         ref = ref.next;
-        buffer.next = ref;
+        buffer.next = ref.next;
         return head;
     }
 
-    public static Node CreateHeadRec(int quantity){//(С РЕКУРСИЕЙ)Добавляю эллемент вначело и возвращаю ссылку на голову
-        if(quantity != 0){
-            Node head = new Node(quantity, CreateHeadRec(quantity - 1));
-            return head;
+    public static Node CreateHeadRec(Node head, int... quantity){//(С РЕКУРСИЕЙ)Добавляю эллемент вначело и возвращаю ссылку на голову
+        if(quantity.length == 1){//Если остался один
+            Node newHead = new Node(quantity[0], head);
+            return newHead;
         }
-        return null;
+        int[] refArray = Arrays.copyOfRange(quantity, 1, quantity.length);//Копирую без первого эллемента
+        Node newElement = new Node(quantity[0], head);
+        head = CreateHeadRec(newElement, refArray);
+        return head;
     }
-    public static Node CreateTailRec(int quantity){//(С РЕКУРСИЕЙ)Добавляю эллемент вконец
-        if(quantity != 0) {
-        Node head = new Node(quantity, null);
-        CreateTailRec(quantity - 1);
+    public static Node CreateTailRec(Node head, int quantity){//(С РЕКУРСИЕЙ)Добавляю эллемент в конец
+        Node ref = head;
+        if(ref.next == null){
+            Node newElement = new Node(quantity, null);
+            ref.next = newElement;
         }else {
-            return new Node(quantity, null);
+            CreateTailRec(ref.next, quantity);
         }
-        return null;
+        return head;
     }
     public static String toStringRec(Node head){//Вывод списка с рекурсией
         if(head.next != null) {
-            System.out.print(head.value);
+            System.out.print(head.value + ", ");
             head = head.next;
             toStringRec(head);
         }else{
             System.out.print(head.value);
         }
-        return null;//Не нуль! доделать!
+        return " ";
     }
 }
 
